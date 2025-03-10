@@ -1,9 +1,4 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/signup">Signup</router-link> |
-    <router-link to="/login">Login</router-link>
-  </nav>
   <router-view/>
 </template>
 
@@ -14,6 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 40px;
 }
 
 nav {

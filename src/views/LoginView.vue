@@ -7,7 +7,6 @@ const password = ref("")
 
 const onLogin = () => {
   const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-  console.log(existingUsers, "1111")
   for (var user of existingUsers) {
     if (user.username == username.value && user.password == password.value) {
       localStorage.setItem('loggedInUser', JSON.stringify(user));
